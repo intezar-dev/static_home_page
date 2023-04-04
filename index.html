@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Page</title>
+    <link rel="stylesheet" href="../c.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: seagreen;
+        }
+
+        .container {
+            width: 320px;
+            min-height: 140vh;
+            background-color: rgb(255, 255, 255);
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            height: 165px;
+            background-color: #007FB4;
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .header_middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .header_box {
+            width: 95%;
+            height: 150px;
+            background-color: #000000;
+            border-radius: 5px;
+            padding-top: 20px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .icon_container {
+            width: 61%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 8px;
+            margin-top: -12px;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .header_inner_box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 15px 0px 10px;
+        }
+
+        .inner_right_box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .inner_right_box,
+        p,
+        span {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 6px;
+        }
+
+        .inner_right_scanner {
+            margin: 20px -100px 0px 0px;
+        }
+
+        .header_middle_icons_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 110px;
+            cursor: pointer;
+        }
+
+        .inner_box>p {
+            font-size: 12px;
+            color: #000;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .video_container {
+            padding: 40px 8px 0px 8px;
+        }
+
+        .video_heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .video_heading>h1 {
+            font-size: 19px;
+            color: #007FB4;
+        }
+
+        .video_inner_box {
+            margin-top: 7px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .link_inner_box {
+            margin-top: 7px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .video_inner_box>span {
+            font-size: 12px;
+            color: #000;
+            font: 700;
+            margin-top: -15px;
+            margin-left: 10px;
+        }
+
+        .three_dot {
+            margin-top: -15px;
+        }
+
+        .svae_btn_container {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            background-color: #007FB4;
+            border-radius: 50%;
+            bottom: 90px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .bottom_container {
+            position: absolute;
+            bottom: 0;
+            width: 94%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .bottom_icon_box {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #007FB4;
+            cursor: pointer;
+        }
+
+        .bottom_icon_box>span {
+            background-color: #007FB4;
+        }
+
+        .bottom_icon_box:hover {
+            background-color: #007FB4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header_middle">
+                <img src="../image/header_top.png" alt="" width="50px" height="50px" />
+                <div class="header_box">
+                    <div class="icon_container">
+                        <img src="../image/c1.jpg" alt="" class="icon">
+                        <img src="../image/c2.png" alt="" class="icon">
+                    </div>
+                    <div class="header_inner_box">
+                        <img src="../image/h1.png" alt="" width="100px" height="140px" style="margin-top: -6px;">
+                        <div class="inner_right_box">
+                            <p>Md Intezar</p>
+                            <span>+1234567893</span>
+                            <span>ABC</span>
+                            <img src="../image/h4.png" alt="" width="30px" height="30px" class="inner_right_scanner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <div class="header_middle_icons_container">
+            <div class="inner_box">
+                <img src="../image/m1.png" alt="" width="50px" height="40px">
+                <p>Add New</p>
+            </div>
+            <div class="inner_box">
+                <img src="../image/m2.png" alt="" width="40px" height="40px">
+                <p>Facebook</p>
+            </div>
+            <div class="inner_box">
+                <img src="../image/m4.png" alt="" width="40px" height="40px">
+                <p>Whatsapp</p>
+            </div>
+            <div class="inner_box">
+                <img src="../image/m3.png" alt="" width="40px" height="40px">
+                <p>Skype</p>
+            </div>
+        </div>
+        <!-- video component -->
+        <div class="video_container">
+            <div class="video_heading">
+                <h1>Videos</h1>
+                <span style="font-size: 12px; font-weight: 600; color: #000;">Add New</span>
+            </div>
+            <div class="video_inner_box">
+                <img src="../image/v1.png" alt="" width="100px" height="60px">
+                <span>All you read NFC to share your digital card</span>
+                <img src="../image//v2.png" alt="" width="20px" height="20px" class="three_dot">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+            <div class="video_inner_box">
+                <img src="../image/v1.png" alt="" width="100px" height="60px">
+                <span>All you read NFC to share your digital card</span>
+                <img src="../image//v2.png" alt="" width="20px" height="20px" class="three_dot">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+            <div class="video_inner_box">
+                <img src="../image/v1.png" alt="" width="100px" height="60px">
+                <span>All you read NFC to share your digital card</span>
+                <img src="../image//v2.png" alt="" width="20px" height="20px" class="three_dot">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+        </div>
+        <!-- link component -->
+        <div class="video_container" style="margin-top: -10px;">
+            <div class="video_heading">
+                <h1>Links</h1>
+                <span style="font-size: 12px; font-weight: 600; color: #000;">Add New</span>
+            </div>
+            <div class="link_inner_box">
+                <img src="../image//l1.webp" alt="" width="30" height="30">
+                <div style="font-size: 12px;">History of Baseball in Vancouver</div>
+                <img src="../image//v2.png" alt="" width="20px" height="20px">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+            <div class="link_inner_box">
+                <img src="../image//l1.webp" alt="" width="30" height="30">
+                <div style="font-size: 12px;">History of Baseball in Vancouver</div>
+                <img src="../image//v2.png" alt="" width="20px" height="20px">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+            <div class="link_inner_box">
+                <img src="../image//l1.webp" alt="" width="30" height="30">
+                <div style="font-size: 12px;">History of Baseball in Vancouver</div>
+                <img src="../image//v2.png" alt="" width="20px" height="20px">
+            </div>
+            <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
+        </div>
+
+        <!-- Save Button Component -->
+        <div class="svae_btn_container">
+            <img src="../image/S1.jpg" alt="" width="20px" height="20px" style="border-radius: 50%;">
+        </div>
+        <div class="bottom_container">
+            <div class="bottom_icon_box">
+                <img src="../image/b1.webp" alt="" width="20px" height="20px" style="border-radius: 50%;">
+            </div>
+            <div class="bottom_icon_box">
+                <img src="../image/b1.PNG" alt="" width="20px" height="20px" style="border-radius: 50%;">
+            </div>
+            <div class="bottom_icon_box">
+                <img src="../image/bb3.PNG" alt="" width="20px" height="20px" style="border-radius: 50%;">
+            </div>
+            <div class="bottom_icon_box">
+                <img src="../image/S1.jpg" alt="" width="20px" height="20px" style="border-radius: 50%;">
+            </div>
+            <div class="bottom_icon_box">
+                <img src="../image/b5.png" alt="" width="20px" height="20px" style="border-radius: 50%;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
