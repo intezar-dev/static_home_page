@@ -19,7 +19,7 @@
 
         .container {
             width: 320px;
-            min-height: 128vh;
+            min-height: 119vh;
             background-color: rgb(255, 255, 255);
             margin: 20px auto;
             position: relative;
@@ -120,15 +120,8 @@
             padding: 40px 8px 0px 8px;
         }
 
-        .video_heading {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .video_heading>h1 {
-            font-size: 19px;
+        .video_heading{
+            font-size:19px;
             color: #007FB4;
         }
 
@@ -138,6 +131,7 @@
             flex-direction: row;
             align-items: center;
             background-color: rgb(255, 255, 255);
+            cursor: pointer;
         }
 
         .link_inner_box {
@@ -145,8 +139,11 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             background-color: rgb(255, 255, 255);
+        }
+        .right_side{
+            margin-left: auto;
         }
 
         .video_inner_box>span {
@@ -161,52 +158,6 @@
             margin-top: -15px;
         }
 
-        .svae_btn_container {
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            background-color: #007FB4;
-            border-radius: 50%;
-            bottom: 90px;
-            right: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        .bottom_container {
-            position: absolute;
-            bottom: 0;
-            width: 94%;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 10px 0px 10px;
-        }
-
-        .bottom_icon_box {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #007FB4;
-            cursor: pointer;
-        }
-
-        .bottom_icon_box>span {
-            background-color: #007FB4;
-        }
-
-        .bottom_icon_box:hover {
-            background-color: #007FB4;
-        }
     </style>
 </head>
 
@@ -236,10 +187,6 @@
         <!-- Header -->
         <div class="header_middle_icons_container">
             <div class="inner_box">
-                <img src="../image/m1.png" alt="" width="50px" height="40px">
-                <p>Add New</p>
-            </div>
-            <div class="inner_box">
                 <img src="../image/m2.png" alt="" width="40px" height="40px">
                 <p>Facebook</p>
             </div>
@@ -254,10 +201,7 @@
         </div>
         <!-- video component -->
         <div class="video_container">
-            <div class="video_heading">
-                <h1>Videos</h1>
-                <span style="font-size: 12px; font-weight: 600; color: #000;">Add New</span>
-            </div>
+                <h1 class="video_heading">Videos</h1>
             <div class="video_inner_box">
                 <img src="../image/v1.png" alt="" width="100px" height="60px">
                 <span>All you read NFC to share your digital card</span>
@@ -278,51 +222,26 @@
             <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
         </div>
         <!-- link component -->
-        <div class="video_container" style="margin-top: -10px;">
-            <div class="video_heading">
-                <h1>Links</h1>
-                <span style="font-size: 12px; font-weight: 600; color: #000;">Add New</span>
-            </div>
+        <div class="video_container" style="margin-top: -22px;">
+                <h1 class="video_heading">Links</h1>
             <div class="link_inner_box">
                 <img src="../image//l1.webp" alt="" width="30" height="30">
                 <div style="font-size: 12px;">History of Baseball in Vancouver</div>
-                <img src="../image//v2.png" alt="" width="20px" height="20px">
+                <img src="../image//v2.png" alt="" width="20px" height="20px" class="right_side">
             </div>
             <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
             <div class="link_inner_box">
                 <img src="../image//l1.webp" alt="" width="30" height="30">
                 <div style="font-size: 12px;">History of Baseball in Vancouver</div>
-                <img src="../image//v2.png" alt="" width="20px" height="20px">
+                <img src="../image//v2.png" alt="" width="20px" height="20px"  class="right_side">
             </div>
             <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
             <div class="link_inner_box">
                 <img src="../image//l1.webp" alt="" width="30" height="30">
                 <div style="font-size: 12px;">History of Baseball in Vancouver</div>
-                <img src="../image//v2.png" alt="" width="20px" height="20px">
+                <img src="../image//v2.png" alt="" width="20px" height="20px" class="right_side">
             </div>
             <hr style="margin-top: 10px;border: 0.5px solid #dad7d7;">
-        </div>
-
-        <!-- Save Button Component -->
-        <div class="svae_btn_container">
-            <img src="../image/S1.jpg" alt="" width="20px" height="20px" style="border-radius: 50%;">
-        </div>
-        <div class="bottom_container">
-            <div class="bottom_icon_box">
-                <img src="../image/b1.webp" alt="" width="20px" height="20px" style="border-radius: 50%;">
-            </div>
-            <div class="bottom_icon_box">
-                <img src="../image/b1.PNG" alt="" width="20px" height="20px" style="border-radius: 50%;">
-            </div>
-            <div class="bottom_icon_box">
-                <img src="../image/bb3.PNG" alt="" width="20px" height="20px" style="border-radius: 50%;">
-            </div>
-            <div class="bottom_icon_box">
-                <img src="../image/S1.jpg" alt="" width="20px" height="20px" style="border-radius: 50%;">
-            </div>
-            <div class="bottom_icon_box">
-                <img src="../image/b5.png" alt="" width="20px" height="20px" style="border-radius: 50%;">
-            </div>
         </div>
     </div>
 </body>
